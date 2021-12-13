@@ -1,16 +1,31 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Indique um amigo!</ion-title>
+  <ion-toolbar  >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Indique um amigo</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+<div class="flex-center">
   <ion-card>
     <ion-card-header>
       <ion-card-title>Recomende</ion-card-title>
     </ion-card-header>
     <ion-card-content>
+
+      <ion-item>
+        <ion-label>Mercado</ion-label>
+        <ion-select multiple="false" cancelText="Cancelar" okText="Ok">
+          <ion-select-option value="argentina">Argentina</ion-select-option>
+          <ion-select-option value="alemanha">Alemanha</ion-select-option>
+          <ion-select-option value="brasil">Brasil</ion-select-option>
+          <ion-select-option value="japao">Japão</ion-select-option>
+          <ion-select-option value="mexico">México</ion-select-option>
+
+        </ion-select>
+      </ion-item>
       <ion-item>
         <ion-label position="floating">Nome*</ion-label>
         <ion-input type="text"></ion-input>
@@ -38,5 +53,7 @@
     </ion-card-content>
     <ion-button size="full" color="warning">Recomendar</ion-button>
   </ion-card>
+
+</div>
 
 </ion-content>

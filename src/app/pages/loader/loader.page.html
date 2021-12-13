@@ -1,7 +1,18 @@
-
 <ion-content>
+  <ion-header >
+    <ion-toolbar color="warning">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title >Olá, João Silva!</ion-title>
+    </ion-toolbar>
+  </ion-header>
   <div class="flex-center">
     <ion-spinner name="crescent" color="success"></ion-spinner>
   </div>
-
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="warning">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

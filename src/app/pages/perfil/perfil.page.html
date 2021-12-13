@@ -1,0 +1,52 @@
+<ion-header >
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title >Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list >
+    <ion-item color="warning">
+      <ion-avatar slot="start">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Olá,</h2>
+        <p><span class="money">João Silva</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Preferências</ion-card-subtitle>
+      <ion-item>
+        <ion-label>Idioma</ion-label>
+        <ion-select multiple="false" cancelText="Cancelar" okText="Ok">
+          <ion-select-option value="alemao">Alemão</ion-select-option>
+          <ion-select-option value="chines">Chinês</ion-select-option>
+          <ion-select-option value="espanhol">Espanhol</ion-select-option>
+          <ion-select-option value="frances">Francês</ion-select-option>
+          <ion-select-option value="holandes">Holandês</ion-select-option>
+          <ion-select-option value="ingles">Inglês</ion-select-option>
+          <ion-select-option value="italiano">Italiano</ion-select-option>
+          <ion-select-option value="japones">Japonês</ion-select-option>
+          <ion-select-option value="portugues">Português</ion-select-option>
+
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox color="warning"></ion-checkbox>
+        <p>Lembrar login e senha?</p>
+      </ion-item>
+      <ion-button color="warning" fill="clear" size="full">Salvar alterações</ion-button>
+    </ion-card-header>
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
