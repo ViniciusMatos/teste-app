@@ -37,8 +37,9 @@
   z-index: -1;
 }
 
-.active{
+.progressbar{
   font-size:small;
+  font-weight: bold;
 }
 .progressbar li:first-child:after{
   content: none;
@@ -55,6 +56,13 @@
 
 .progressbar li.active + li:after{
   background-color: rgb(255, 194, 28);
+}
+
+.texto{
+  position:absolute;
+  font-size:small;
+  font-weight: bold;
+  margin-left:3%;
 }
 
 
