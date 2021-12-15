@@ -7,8 +7,31 @@
       <ion-title >Olá, João Silva!</ion-title>
     </ion-toolbar>
   </ion-header>
-  <div class="flex-center">
-    <ion-spinner name="crescent" color="success"></ion-spinner>
+  <ion-card>
+  <ion-card-content>
+
+    <ion-item>
+      <ion-label>Mercado</ion-label>
+      <ion-select multiple="false" cancelText="Cancelar" okText="Ok">
+        <ion-select-option value="argentina">Argentina</ion-select-option>
+        <ion-select-option value="alemanha">Alemanha</ion-select-option>
+        <ion-select-option value="brasil">Brasil</ion-select-option>
+        <ion-select-option value="japao">Japão</ion-select-option>
+        <ion-select-option value="mexico">México</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <br><br>
+    <ion-button size="full" color="warning"  >Filtros</ion-button>
+  </ion-card-content>
+  </ion-card>
+  <div >
+    <section class="container">
+      <ul class="progressbar">
+        <li class="active"> Enviado</li>
+        <li> Ativo </li>
+        <li> Assinou </li>
+      </ul>
+    </section>
   </div>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="warning" (click)="loader()">
