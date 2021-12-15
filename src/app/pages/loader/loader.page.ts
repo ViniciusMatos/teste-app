@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
  import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@
 })
 export class LoaderPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {}
 
   ngOnInit() {
   }
+
+loader(){
+  this.router.navigate(['register']);
+}
 
 }
